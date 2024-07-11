@@ -1,0 +1,21 @@
+podname: hello-world
+
+repository:
+  image: "rstmvaas/python-app"
+  tag: "2.0.0"
+
+service:
+  name: hello-world
+  port: 80
+  targetport: 5000
+  type: LoadBalancer
+
+
+
+
+
+
+
+
+
+
