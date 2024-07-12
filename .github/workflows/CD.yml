@@ -38,6 +38,10 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
+    - name: Deploy
+      run: | 
+        cd hello 
+        helm upgrade --install my-release ./hello --set repository.image=rstmvaas/python-app --set repository.tag=2.0.0
 
 
 
