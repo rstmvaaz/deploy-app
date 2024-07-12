@@ -40,9 +40,10 @@ jobs:
 
     - name: Deploy
       run: | 
-        cd hello 
-        helm upgrade --install my-release ./hello --set repository.image=rstmvaas/python-app1 --set repository.tag=2.0.0
 
+        helm upgrade --install my-release ./hello --set repository.image=rstmvaas/python-app1 --set repository.tag=2.0.0
+   
+    
 
 
 
